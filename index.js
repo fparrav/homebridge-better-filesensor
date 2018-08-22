@@ -70,7 +70,7 @@ FileSensorAccessory.prototype = {
         }
     }.bind(this);
 
-    var watcher = chokidar.watch(this.path, {alwaysStat: true});
+    var watcher = chokidar.watch(this.path, {alwaysStat: true,usePolling: true});
     watcher.on('add', changeHandler);
     watcher.on('change', changeHandler);
 

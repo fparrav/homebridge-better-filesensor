@@ -1,10 +1,10 @@
 {
-  "name": "homebridge-filesensor",
+  "name": "homebridge-better-filesensor",
   "description": "FileSensor plugin for homebridge: https://github.com/nfarina/homebridge",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/SphtKr/homebridge-filesensor.git"
+    "url": "git@github.com:kaosrq/homebridge-filesensor.git"
   },
   "license": "ISC",
   "preferGlobal": true,
