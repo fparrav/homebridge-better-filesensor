@@ -66,10 +66,7 @@ FileSensorAccessory.prototype = {
             var newState = this.inverse ? false : true;
             changeAction(newState);
             if(this.timer !== undefined) clearTimeout(this.timer);
-            this.timer = setTimeout(function(){changeAction(!newState);
-            delete this.timer;
-
-            }, this.window_seconds * 1000);
+            this.timer = setTimeout(function(){changeAction(!newState);}, this.window_seconds * 1000);
         }
     }.bind(this);
 

@@ -1,7 +1,7 @@
 {
   "name": "homebridge-better-filesensor",
   "description": "FileSensor plugin for homebridge: https://github.com/nfarina/homebridge",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "repository": {
     "type": "git",
     "url": "git@github.com:kaosrq/homebridge-filesensor.git"

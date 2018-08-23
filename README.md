@@ -2,10 +2,26 @@
 
 [![npm version](https://badge.fury.io/js/homebridge-better-filesensor.svg)](https://badge.fury.io/js/homebridge-better-filesensor)
 
-Fork de  [SphtKr/homebridge-filesensor](https://github.com/SphtKr/homebridge-filesensor).
+Fork of  [SphtKr/homebridge-filesensor](https://github.com/SphtKr/homebridge-filesensor).
 
 # Changelog:
 * Parameter is added to detect changes in network drives [ `usePolling: true` ].
+
+---------
+
+`inverse` must be a boolean value (without quotes).
+
+Sample Configuration: 
+
+	{
+        "accessory": "homebridge-better-filesensor.FileSensor",
+        "name": "Sensor Demo",
+        "path": "/folder/or/File",
+        "window_seconds": "5",
+        "inverse": false,
+        "sensor_type": "m"
+    }
+
 
 Original Readme : 
   
