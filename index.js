@@ -8,7 +8,7 @@ module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
 
-    homebridge.registerAccessory("homebridge-filesensor", "FileSensor", FileSensorAccessory);
+    homebridge.registerAccessory("homebridge-better-filesensor", "FileSensor", FileSensorAccessory);
 }
 
 function FileSensorAccessory(log, config) {
@@ -66,7 +66,10 @@ FileSensorAccessory.prototype = {
             var newState = this.inverse ? false : true;
             changeAction(newState);
             if(this.timer !== undefined) clearTimeout(this.timer);
-            this.timer = setTimeout(function(){changeAction(!newState);}, this.window_seconds * 1000);
+            this.timer = setTimeout(function(){changeAction(!newState);
+            delete this.timer;
+
+            }, this.window_seconds * 1000);
         }
     }.bind(this);
 
