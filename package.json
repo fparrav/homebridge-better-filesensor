@@ -16,7 +16,7 @@
     "homebridge": ">=0.2.5"
   },
   "dependencies": {
-    "chokidar": "^1.0.5",
+    "chokidar": "^3.5.2",
     "debug": "^2.2.0"
   }
 }
